@@ -24,30 +24,33 @@ Borrowers apply for loans through a multi-step process. Operations teams manage 
 - **Node.js** 18+ and npm
 - **MongoDB** (local or [Atlas](https://www.mongodb.com/atlas))
 
-### 1. Clone the repository
+### 1. Clone the repositories
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/creditsea.git
-cd creditsea
+# Clone Backend
+git clone https://github.com/KunalBamane57/CreditSea-Backend.git
+
+# Clone Frontend
+git clone https://github.com/KunalBamane57/CreditSea-Frontend.git
 ```
 
 ### 2. Setup Backend
 
 ```bash
-cd server
+cd CreditSea-Backend
 cp .env.example .env      # Edit MONGODB_URI if needed
 npm install
-npm run seed              # Creates accounts for all 6 roles
-npm run dev               # Starts on http://localhost:5000
+npm run seed              # Creates accounts for all 6 roles & populates initial demo data
+npm run dev               # Starts API server on http://localhost:5000
 ```
 
 ### 3. Setup Frontend
 
 ```bash
-cd client
+cd CreditSea-Frontend
 cp .env.example .env.local
 npm install
-npm run dev               # Starts on http://localhost:3000
+npm run dev               # Starts Next.js app on http://localhost:3000
 ```
 
 ### 4. Open the app
